@@ -2,35 +2,35 @@ package vr.projects.sunnycompass.berrytracker.domain;
 
 public class Category {
 
-    private CategoryId id;
-    private String name;
-    private CategoryType type;
-    private Tags tags;
+    private final CategoryId id;
+    private final String name;
+    private final CategoryType type;
+    private final Tags tags;
 
-    public Category(CategoryId id, String name, CategoryType type, Tags tags) {
+    public Category(final CategoryId id, final String name, final CategoryType type, final Tags tags) {
         this.id = id;
         this.name = name;
         this.type = type;
         this.tags = tags;
     }
 
-    public static Category create(String name, CategoryType type, Tags tags) {
+    public static Category create(final String name, final CategoryType type, final Tags tags) {
         return new Category(CategoryId.create(), name, type, tags);
     }
 
     public CategoryId getId() {
-        return id;
+        return this.id;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public CategoryType getType() {
-        return type;
+        return this.type;
     }
 
     public Tags getTags() {
-        return tags;
+        return this.tags;
     }
 }
