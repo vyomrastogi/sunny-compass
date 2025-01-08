@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sunny-compass
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: sunny-compass
+      username: ${MONGO_INITDB_ROOT_USERNAME}
+      password: ${MONGO_INITDB_ROOT_PASSWORD}
+      authentication-database: admin
+  devtools:
+    livereload:
+      enabled: true

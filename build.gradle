@@ -29,7 +29,11 @@ ext {
 }
 
 dependencies {
+	//web
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	//data
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	//modulith
 	implementation 'org.springframework.modulith:spring-modulith-starter-core'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -52,7 +56,7 @@ tasks.named('test') {
 spotless {
 	java {
 		//importOrder
-		importOrder('java|javax','vr.projects', '','\\#vr.projects', '\\#')
+		importOrder('java|javax', 'vr.projects', '', '\\#vr.projects', '\\#')
 		//switch for `google-java-format` as underlying engine to `cleanthat-javaparser-unnecessaryimport`
 		removeUnusedImports('cleanthat-javaparser-unnecessaryimport')
 		//format code
