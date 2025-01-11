@@ -12,3 +12,11 @@ spring:
   devtools:
     livereload:
       enabled: true
+
+logging:
+  group: 
+   db: 
+     - org.springframework.data.mongodb
+
+  level:
+    db: DEBUG

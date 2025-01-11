@@ -1,5 +1,6 @@
 package vr.projects.sunnycompass.berrytracker.application.handlers;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import vr.projects.sunnycompass.berrytracker.application.commands.CreateCategoryCommand;
 import vr.projects.sunnycompass.berrytracker.core.cqrs.Command;
@@ -10,13 +11,10 @@ import vr.projects.sunnycompass.berrytracker.domain.Tags;
 import vr.projects.sunnycompass.berrytracker.infrastructure.CategoryRepository;
 
 @Component
+@RequiredArgsConstructor
 public class CreateCategoryCommandHandler implements CommandHandler<CreateCategoryCommand, Category> {
 
     private final CategoryRepository categoryRepository;
-
-    public CreateCategoryCommandHandler(final CategoryRepository categoryRepository) {
-        this.categoryRepository = categoryRepository;
-    }
 
     @Override
     public Category handle(final CreateCategoryCommand command) {

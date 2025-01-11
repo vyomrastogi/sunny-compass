@@ -14,4 +14,8 @@ public interface CategoryApi {
      * @return a {@link CategoryResource} object representing the created category, including its unique identifier
      */
     public CategoryResource create(String name, String type, List<String> tags);
+
+    public CategoryBountyResource addBounty(String categoryName, Long totalBerries, Integer month, Integer year);
+
+    public List<CategoryResource> findAllCategories();
 }

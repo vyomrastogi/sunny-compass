@@ -31,7 +31,7 @@ public class Category {
     }
 
     public static Category create(final String name, final CategoryType type, final Tags tags) {
-        final var category = new Category(CategoryId.create(), name, type, tags);
+        final var category = new Category(CategoryId.from(name), name, type, tags);
         category.addCategoryCreatedEvent();
         return category;
     }
