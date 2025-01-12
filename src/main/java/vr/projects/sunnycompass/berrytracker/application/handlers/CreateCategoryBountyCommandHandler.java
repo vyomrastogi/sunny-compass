@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 import vr.projects.sunnycompass.berrytracker.application.commands.CreateCategoryBountyCommand;
 import vr.projects.sunnycompass.berrytracker.core.cqrs.Command;
 import vr.projects.sunnycompass.berrytracker.core.cqrs.CommandHandler;
-import vr.projects.sunnycompass.berrytracker.domain.Bounty;
-import vr.projects.sunnycompass.berrytracker.domain.CategoryId;
+import vr.projects.sunnycompass.berrytracker.domain.bounties.Bounty;
+import vr.projects.sunnycompass.berrytracker.domain.categories.CategoryId;
 import vr.projects.sunnycompass.berrytracker.infrastructure.BountyRepository;
 import vr.projects.sunnycompass.berrytracker.infrastructure.CategoryRepository;
 

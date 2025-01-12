@@ -1,8 +1,7 @@
-package vr.projects.sunnycompass.restapi.categories;
+package vr.projects.sunnycompass.restapi;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
-import vr.projects.sunnycompass.restapi.RestError;
 
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 public record RestResponse(Object data, List<RestError> errors) {

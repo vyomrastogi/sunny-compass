@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 import vr.projects.sunnycompass.berrytracker.application.commands.CreateCategoryCommand;
 import vr.projects.sunnycompass.berrytracker.core.cqrs.Command;
 import vr.projects.sunnycompass.berrytracker.core.cqrs.CommandHandler;
-import vr.projects.sunnycompass.berrytracker.domain.Category;
-import vr.projects.sunnycompass.berrytracker.domain.CategoryType;
 import vr.projects.sunnycompass.berrytracker.domain.Tags;
+import vr.projects.sunnycompass.berrytracker.domain.categories.Category;
+import vr.projects.sunnycompass.berrytracker.domain.categories.CategoryType;
 import vr.projects.sunnycompass.berrytracker.infrastructure.CategoryRepository;
 
 @Component

@@ -1,4 +1,4 @@
-package vr.projects.sunnycompass.berrytracker.domain;
+package vr.projects.sunnycompass.berrytracker.domain.categories;
 
 /**
  * CategoryType defines possible 'types' of categories

@@ -3,8 +3,8 @@ package vr.projects.sunnycompass.berrytracker.infrastructure;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
-import vr.projects.sunnycompass.berrytracker.domain.Category;
-import vr.projects.sunnycompass.berrytracker.domain.CategoryId;
+import vr.projects.sunnycompass.berrytracker.domain.categories.Category;
+import vr.projects.sunnycompass.berrytracker.domain.categories.CategoryId;
 
 @Repository
 @RequiredArgsConstructor

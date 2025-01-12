@@ -1,4 +1,4 @@
-package vr.projects.sunnycompass.berrytracker.domain;
+package vr.projects.sunnycompass.berrytracker.domain.categories;
 
 import java.time.Instant;
 import vr.projects.sunnycompass.eventbridge.SunnyCompassEvents;

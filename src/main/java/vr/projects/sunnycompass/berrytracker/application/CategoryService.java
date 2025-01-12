@@ -9,8 +9,8 @@ import vr.projects.sunnycompass.berrytracker.CategoryResource;
 import vr.projects.sunnycompass.berrytracker.application.commands.CreateCategoryBountyCommand;
 import vr.projects.sunnycompass.berrytracker.application.commands.CreateCategoryCommand;
 import vr.projects.sunnycompass.berrytracker.core.cqrs.CommandDispatcher;
-import vr.projects.sunnycompass.berrytracker.domain.Bounty;
-import vr.projects.sunnycompass.berrytracker.domain.Category;
+import vr.projects.sunnycompass.berrytracker.domain.bounties.Bounty;
+import vr.projects.sunnycompass.berrytracker.domain.categories.Category;
 import vr.projects.sunnycompass.berrytracker.infrastructure.QueryRepository;
 
 @Service

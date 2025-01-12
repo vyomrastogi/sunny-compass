@@ -1,6 +1,7 @@
-package vr.projects.sunnycompass.berrytracker.domain;
+package vr.projects.sunnycompass.berrytracker.domain.bounties;
 
 import java.util.Objects;
+import vr.projects.sunnycompass.berrytracker.domain.categories.CategoryId;
 
 public record BountyId(String id) {
 

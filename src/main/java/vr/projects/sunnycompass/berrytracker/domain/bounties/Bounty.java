@@ -1,7 +1,8 @@
-package vr.projects.sunnycompass.berrytracker.domain;
+package vr.projects.sunnycompass.berrytracker.domain.bounties;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import vr.projects.sunnycompass.berrytracker.domain.categories.CategoryId;
 
 @Document(collection = "berry-tracker")
 public class Bounty {
