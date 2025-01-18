@@ -9,7 +9,6 @@ import org.springframework.data.annotation.Transient;
 import org.springframework.data.domain.AfterDomainEventPublication;
 import org.springframework.data.domain.DomainEvents;
 import org.springframework.data.mongodb.core.mapping.Document;
-import vr.projects.sunnycompass.berrytracker.domain.Tags;
 
 @Document(collection = "berry-tracker")
 public class Category {

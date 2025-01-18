@@ -38,3 +38,6 @@ out/
 
 ### Environment files ###
 .env
+
+### Vaadin ###
+src/main/frontend/

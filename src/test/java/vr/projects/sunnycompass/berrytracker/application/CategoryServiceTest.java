@@ -12,10 +12,10 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import vr.projects.sunnycompass.berrytracker.application.commands.CreateCategoryCommand;
 import vr.projects.sunnycompass.berrytracker.core.cqrs.CommandDispatcher;
-import vr.projects.sunnycompass.berrytracker.domain.Tags;
 import vr.projects.sunnycompass.berrytracker.domain.categories.Category;
 import vr.projects.sunnycompass.berrytracker.domain.categories.CategoryId;
 import vr.projects.sunnycompass.berrytracker.domain.categories.CategoryType;
+import vr.projects.sunnycompass.berrytracker.domain.categories.Tags;
 import vr.projects.sunnycompass.berrytracker.infrastructure.QueryRepository;
 
 @ExtendWith(MockitoExtension.class)
