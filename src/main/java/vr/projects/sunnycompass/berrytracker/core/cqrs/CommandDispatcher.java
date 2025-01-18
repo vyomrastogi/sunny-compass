@@ -19,7 +19,7 @@ public class CommandDispatcher {
         final CommandHandler<C, R> handler = (CommandHandler<C, R>) this.handlerRegistry.get(command.getClass());
         if (handler == null) {
             throw new IllegalArgumentException(
-                    "No handler found for command: " + command.getClass().getName());
+                    "No handler found for command: " + command.getClass().getSimpleName());
         }
         return handler.handle(command);
     }

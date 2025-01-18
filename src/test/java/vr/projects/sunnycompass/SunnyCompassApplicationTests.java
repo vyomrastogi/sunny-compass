@@ -1,4 +1,4 @@
-package vr.projects.sunny_compass;
+package vr.projects.sunnycompass;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
