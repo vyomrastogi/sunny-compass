@@ -15,6 +15,6 @@ public class QueryRepository {
     public List<Category> findAll() {
         final var categoryIdPrefix = String.format(CategoryId.CATEGORYID_PATTERN, "");
         final var idRegex = String.format("^%s", categoryIdPrefix);
-        return this.categoryRepository.findAllStartingWith(idRegex);
+        return this.categoryRepository.findCategories(idRegex);
     }
 }

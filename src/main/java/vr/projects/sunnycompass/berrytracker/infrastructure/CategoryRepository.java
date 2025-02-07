@@ -9,5 +9,5 @@ import vr.projects.sunnycompass.berrytracker.domain.categories.CategoryId;
 public interface CategoryRepository extends MongoRepository<Category, CategoryId> {
 
     @Query("{ '_id._id': { $regex: ?0 } }")
-    List<Category> findAllStartingWith(String idRegex);
+    List<Category> findCategories(String idRegex);
 }

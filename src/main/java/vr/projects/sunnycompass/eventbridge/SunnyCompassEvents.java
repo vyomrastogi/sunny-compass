@@ -2,10 +2,10 @@ package vr.projects.sunnycompass.eventbridge;
 
 import java.time.Instant;
 
-public interface SunnyCompassEvents {
+public interface SunnyCompassEvents<T> {
     String eventName();
 
     Instant createdAt();
 
-    Object payload();
+    T payload();
 }
